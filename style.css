@@ -6,11 +6,11 @@
 }
 
 :root {
-    --primary-color: #FF4B91;
-    --secondary-color: #FF8DC7;
-    --text-color: #333;
-    --light-bg: #FFF5F9;
-    --dark-bg: #1A1A1A;
+    --primary-color: #0E0D09;
+    --secondary-color: #E46B07;
+    --text-color: #0E0D09;
+    --light-bg: #FFFFFF;
+    --dark-bg: #0E0D09;
     --gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
 }
 
