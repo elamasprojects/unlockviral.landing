@@ -52,3 +52,23 @@ document.querySelectorAll('.btn').forEach(button => {
         console.log('CTA button clicked');
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const faqQuestions = document.querySelectorAll('.faq-new .faq-question');
+    faqQuestions.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const parent = btn.closest('.faq-q');
+            const isOpen = parent.classList.contains('open');
+            // Cerrar todos
+            document.querySelectorAll('.faq-new .faq-q.open').forEach(q => {
+                q.classList.remove('open');
+                q.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+            });
+            // Si no estaba abierto, abrirlo
+            if (!isOpen) {
+                parent.classList.add('open');
+                btn.setAttribute('aria-expanded', 'true');
+            }
+        });
+    });
+});
