@@ -1410,3 +1410,19 @@ section {
         width: 420px;
     }
 }
+
+@media (max-width: 700px) {
+    .module-image,
+    .bonus .module-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    .module-image img,
+    .bonus .module-image img {
+        margin: 0 auto;
+        display: block;
+    }
+}
