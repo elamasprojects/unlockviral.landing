@@ -457,19 +457,17 @@ section {
     margin: 0 0 18px 0;
 }
 .cta-list li, .cta-bonus-list li {
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
     background: #f7fafc;
     border-radius: 10px;
-    margin-bottom: 16px;
     padding: 18px 20px 14px 16px;
-    display: flex;
-    align-items: flex-start;
-    gap: 14px;
     font-size: 1.05rem;
     box-shadow: 0 2px 8px 0 rgba(0,122,255,0.04);
     border: 1.2px solid #eafdff;
     color: #172143;
     position: relative;
-    flex-direction: row;
 }
 .cta-list li .cta-icon, .cta-bonus-list li .cta-bonus-icon {
     font-size: 1.35rem;
@@ -1093,19 +1091,17 @@ section {
     margin: 0 0 18px 0;
 }
 .cta-list li, .cta-bonus-list li {
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
     background: #f7fafc;
     border-radius: 10px;
-    margin-bottom: 16px;
     padding: 18px 20px 14px 16px;
-    display: flex;
-    align-items: flex-start;
-    gap: 14px;
     font-size: 1.05rem;
     box-shadow: 0 2px 8px 0 rgba(0,122,255,0.04);
     border: 1.2px solid #eafdff;
     color: #172143;
     position: relative;
-    flex-direction: row;
 }
 .cta-list li .cta-icon, .cta-bonus-list li .cta-bonus-icon {
     font-size: 1.35rem;
@@ -1297,8 +1293,9 @@ section {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 48px 0 32px 0;
+    margin: 48px 0 0 0;
     background: none;
+    padding-bottom: 0 !important;
 }
 .intro-formula-inner {
     background: #fff;
@@ -1362,4 +1359,54 @@ section {
 
 .celeste {
     color: #009fe3 !important;
+}
+
+.img-pasos-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+    width: 100%;
+}
+.img-pasos {
+    width: 660px;
+    max-width: 98vw;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+}
+@media (max-width: 700px) {
+    .img-pasos {
+        width: 420px;
+    }
+}
+
+.course-content {
+    padding-top: 0 !important;
+}
+
+.img-mockups2-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+    width: 100%;
+}
+.img-mockups2 {
+    width: 660px;
+    max-width: 98vw;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+}
+@media (max-width: 700px) {
+    .img-mockups2 {
+        width: 420px;
+    }
 }
