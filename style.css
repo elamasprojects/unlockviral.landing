@@ -960,11 +960,13 @@ section {
     width: 100%;
     max-width: 380px;
     height: auto;
-    border-radius: 0;
-    object-fit: contain;
-    border: none;
-    margin-bottom: 0;
-    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.testimonio-foto:hover {
+    transform: translateY(-5px);
 }
 .testimonio-usuario {
     font-weight: 700;
