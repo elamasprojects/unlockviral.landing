@@ -71,4 +71,17 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Video custom play button logic
+    const playBtn = document.getElementById('custom-play-btn');
+    const posterImg = document.getElementById('custom-video-poster');
+    const video = document.getElementById('custom-video');
+    if (playBtn && posterImg && video) {
+        playBtn.addEventListener('click', function() {
+            playBtn.style.display = 'none';
+            posterImg.style.display = 'none';
+            video.style.display = 'block';
+            video.play();
+        });
+    }
 });

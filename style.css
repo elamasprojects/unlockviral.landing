@@ -41,7 +41,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 2.52rem;
     background: var(--gradient);
     -webkit-background-clip: text;
     background-clip: text;
@@ -68,7 +68,7 @@ section {
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 120px 0;
+    padding: 50px 0;
     background: var(--gradient);
     color: white;
 }
@@ -1522,4 +1522,90 @@ html, body {
         max-width: 100vw;
         overflow-x: hidden;
     }
+}
+
+.hero-topbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 0 0;
+    z-index: 10;
+}
+.hero-topbar-text {
+    background: rgba(10, 10, 10, 0.85);
+    color: #9fd8e1;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    border-radius: 2em;
+    padding: 10px 34px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
+    border: 1.5px solid rgba(159,216,225,0.18);
+    display: inline-block;
+    text-align: center;
+}
+
+.video-wrapper {
+    background: rgba(10,30,50,0.18);
+    border-radius: 20px;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 24px auto;
+    max-width: 740px;
+    box-shadow: 0 2px 18px 0 rgba(0,0,0,0.10);
+    border: 2px solid #9fd8e1;
+    position: relative;
+    transition: box-shadow 0.25s, transform 0.25s;
+}
+.video-wrapper:hover {
+    box-shadow: 0 8px 32px 0 rgba(0,122,255,0.18);
+    transform: scale(1.015);
+}
+.hero video {
+    border-radius: 16px;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 2px 18px 0 rgba(0,0,0,0.10);
+    border: none;
+    background: #000;
+    display: block;
+}
+@media (max-width: 800px) {
+    .video-wrapper {
+        max-width: 98vw;
+        padding: 6vw 2vw;
+    }
+    .hero video {
+        max-width: 100vw;
+    }
+}
+/* Botón de play personalizado */
+.custom-play-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,122,255,0.92);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.18);
+    cursor: pointer;
+    z-index: 2;
+    transition: background 0.2s, transform 0.2s;
+    opacity: 0.92;
+}
+.custom-play-btn:hover {
+    background: #1184FC;
+    transform: translate(-50%, -50%) scale(1.08);
 }
