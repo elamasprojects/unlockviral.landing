@@ -800,7 +800,7 @@ section {
 }
 
 .about-new {
-    background: linear-gradient(120deg, rgba(10,30,50,0.92) 70%, rgba(0,122,255,0.85) 100%), url('fotoara1.jpg') center/cover no-repeat;
+    background: linear-gradient(120deg, rgba(10,30,50,0.92) 70%, rgba(0,122,255,0.85) 100%);
     color: #fff;
     position: relative;
     padding: 0;
