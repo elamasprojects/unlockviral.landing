@@ -1586,32 +1586,6 @@ html, body {
         max-width: 100vw;
     }
 }
-/* Botón de play personalizado */
-.custom-play-btn {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0,122,255,0.92);
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.5rem;
-    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.18);
-    cursor: pointer;
-    z-index: 2;
-    transition: background 0.2s, transform 0.2s;
-    opacity: 0.92;
-}
-.custom-play-btn:hover {
-    background: #1184FC;
-    transform: translate(-50%, -50%) scale(1.08);
-}
 
 .bonuses {
     padding-top: 0 !important;
