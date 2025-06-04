@@ -71,4 +71,24 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Video custom play button logic
+    const playBtn = document.getElementById('custom-play-btn');
+    const video = document.getElementById('custom-video');
+    if (playBtn && video) {
+        playBtn.addEventListener('click', function() {
+            video.play();
+            playBtn.style.display = 'none';
+        });
+        
+        // Ocultar el botón cuando el video se reproduce
+        video.addEventListener('play', function() {
+            playBtn.style.display = 'none';
+        });
+        
+        // Mostrar el botón cuando el video se pausa
+        video.addEventListener('pause', function() {
+            playBtn.style.display = 'flex';
+        });
+    }
 });
