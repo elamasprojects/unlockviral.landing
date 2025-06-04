@@ -1664,3 +1664,15 @@ html, body {
         height: auto !important;
     }
 }
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 1.51rem !important;
+    }
+    .hero {
+        padding-top: 25px !important;
+    }
+    .hero-topbar-text {
+        font-size: 0.4rem !important;
+    }
+}
